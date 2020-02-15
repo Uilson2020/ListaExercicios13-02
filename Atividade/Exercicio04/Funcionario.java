@@ -4,10 +4,10 @@ public class Funcionario extends Pessoa {
     protected Integer numeroMatricula;
 
     public void exibirDados (){
-        System.out.println(getNumeroMatricula());
+        System.out.println(nome + " " + idade + " " + cidadeNascimento + " " + numeroMatricula );
     }
 
-    public Funcionario(String nome, Integer idade, String cidadeNascimento) {
+    public Funcionario(String nome, Integer idade, String cidadeNascimento, Integer numeroMatricula) {
         super(nome, idade, cidadeNascimento);
         this.numeroMatricula = numeroMatricula;
     }

@@ -5,11 +5,10 @@ public class Cliente extends Pessoa {
 
 
     public void exibirDados(){
-        System.out.println(getNome());
-        System.out.println(getCpf());
+        System.out.println( nome + " " + idade + " " + cidadeNascimento + " " + cpf);
     }
 
-    public Cliente(String nome, Integer idade, String cidadeNascimento) {
+    public Cliente(String nome, Integer idade, String cidadeNascimento, String cpf) {
         super(nome, idade, cidadeNascimento);
         this.cpf = cpf;
     }
